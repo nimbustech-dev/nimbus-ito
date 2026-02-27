@@ -1,5 +1,10 @@
 # Deal-ito 통합 실적/이익 대시보드
 
+사이트 주소: http://211.188.57.42:8501
+
+가이드 링크 : https://wealthy-pruner-674.notion.site/2ef7ba5f3b3980e8aedeca134a70724d?v=2ef7ba5f3b398160a518000c9e9500f8&source=copy_link
+
+
 엑셀 실적 데이터를 기반으로 **매출·이익**을 분석하고, 담당자별 목표 대비 달성률·월별 현황·순위 조회를 제공하는 Streamlit 웹 애플리케이션입니다.
 
 ---
