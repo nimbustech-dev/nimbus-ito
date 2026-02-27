@@ -1187,19 +1187,19 @@ else:
                 mm_avg = agg_df[mm_col].apply(clean_currency_val).mean() if deal_count > 0 else 0
                 c1, c2 = st.columns(2)
                 with c1: st.metric("MM 전체값", f"{mm_total:,.2f}")
-                with c2: st.metric("인당 MM평균값", f"{mm_avg:,.2f}")
+                with c2: st.metric("인당 년 투입기간", f"{mm_avg:,.2f}")
             else:
                 st.caption("'Deal - @MM (연도별)' 컬럼이 없습니다.")
 
             st.markdown("**2. 매출 분석**")
             c1, c2 = st.columns(2)
             with c1: st.metric("매출 전체값", f"{sales_total:,.0f}원")
-            with c2: st.metric("인당 매출 평균값", f"{sales_avg:,.0f}원")
+            with c2: st.metric("인당 년 매출", f"{sales_avg:,.0f}원")
 
             st.markdown("**3. 이익 분석**")
             c1, c2 = st.columns(2)
             with c1: st.metric("이익 전체값", f"{profit_total:,.0f}원")
-            with c2: st.metric("인당 이익 평균값", f"{profit_avg:,.0f}원")
+            with c2: st.metric("인당 년 이익", f"{profit_avg:,.0f}원")
 
             profit_rate = (profit_total / sales_total * 100) if sales_total > 0 else 0
             st.markdown("**4. 이익률**")
